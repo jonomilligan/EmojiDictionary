@@ -44,7 +44,7 @@
         <!--View Controller-->
         <scene sceneID="QVH-Ad-8km">
             <objects>
-                <viewController id="she-eq-ypE" sceneMemberID="viewController">
+                <viewController id="she-eq-ypE" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oH7-w1-lfe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +72,10 @@
                         <viewLayoutGuide key="safeArea" id="0yy-fK-AR5"/>
                     </view>
                     <navigationItem key="navigationItem" id="EkL-6g-ZYZ"/>
+                    <connections>
+                        <outlet property="emojiDefLabel" destination="24P-np-iaq" id="dbf-WY-5GG"/>
+                        <outlet property="emojiLabel" destination="yTW-yt-gMD" id="56e-Ry-cys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSs-4u-zIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
