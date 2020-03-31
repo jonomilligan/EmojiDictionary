@@ -12,41 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var emojiDefLabel: UILabel!
-    var emoji = ""
+    @IBOutlet weak var birthLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //["😀","😎","🤩","💩","🦍","🏎","🏡","⛪️","⌚️"]
-        
-        if emoji == "😀" {
-            emojiDefLabel.text = "A smiley face!"
-        }
-        if emoji == "😎" {
-            emojiDefLabel.text = "A cool guy"
-        }
-        if emoji == "🤩" {
-            emojiDefLabel.text = "Starry eyes"
-        }
-        if emoji == "💩" {
-            emojiDefLabel.text = "A poop"
-        }
-        if emoji == "🦍" {
-            emojiDefLabel.text = "A huge gorilla!"
-        }
-        if emoji == "🏎" {
-            emojiDefLabel.text = "A racecar sponsored by swift"
-        }
-        if emoji == "🏡" {
-            emojiDefLabel.text = "A house"
-        }
-        if emoji == "⛪️" {
-            emojiDefLabel.text = "A church"
-        }
-        if emoji == "⌚️" {
-            emojiDefLabel.text = "A watch"
-        }
-        emojiLabel.text = emoji
+
+        emojiLabel.text = emoji.theEmoji
+        emojiDefLabel.text = emoji.def
+        birthLabel.text = "Birth year: \(emoji.birthYear)"
+        categoryLabel.text = "Category: \(emoji.category)"
 
     }
     

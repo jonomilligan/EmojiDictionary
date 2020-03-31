@@ -56,7 +56,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A race car sponsored by swift" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24P-np-iaq">
-                                <rect key="frame" x="93.5" y="831" width="227" height="21"/>
+                                <rect key="frame" x="86" y="831" width="242" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQz-FR-5yN">
+                                <rect key="frame" x="146" y="762" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Transportation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDO-by-dpy">
+                                <rect key="frame" x="111" y="699" width="192" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,15 +76,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="24P-np-iaq" firstAttribute="top" secondItem="aQz-FR-5yN" secondAttribute="bottom" constant="48" id="3Si-gt-A5n"/>
+                            <constraint firstItem="aQz-FR-5yN" firstAttribute="top" secondItem="XDO-by-dpy" secondAttribute="bottom" constant="42" id="DNS-t4-Kbr"/>
                             <constraint firstItem="yTW-yt-gMD" firstAttribute="top" secondItem="0yy-fK-AR5" secondAttribute="top" constant="100" id="QUy-gq-OBW"/>
                             <constraint firstItem="0yy-fK-AR5" firstAttribute="bottom" secondItem="24P-np-iaq" secondAttribute="bottom" constant="10" id="XI7-uN-Tyk"/>
+                            <constraint firstItem="XDO-by-dpy" firstAttribute="centerX" secondItem="oH7-w1-lfe" secondAttribute="centerX" id="cOc-HC-CSo"/>
                             <constraint firstItem="yTW-yt-gMD" firstAttribute="centerX" secondItem="oH7-w1-lfe" secondAttribute="centerX" id="pzV-Xg-idT"/>
                             <constraint firstItem="24P-np-iaq" firstAttribute="centerX" secondItem="oH7-w1-lfe" secondAttribute="centerX" id="raI-hh-sv6"/>
+                            <constraint firstItem="aQz-FR-5yN" firstAttribute="centerX" secondItem="oH7-w1-lfe" secondAttribute="centerX" id="tP0-I8-sac"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0yy-fK-AR5"/>
                     </view>
                     <navigationItem key="navigationItem" id="EkL-6g-ZYZ"/>
                     <connections>
+                        <outlet property="birthLabel" destination="aQz-FR-5yN" id="6vN-EN-yI7"/>
+                        <outlet property="categoryLabel" destination="XDO-by-dpy" id="KHL-qe-AI5"/>
                         <outlet property="emojiDefLabel" destination="24P-np-iaq" id="dbf-WY-5GG"/>
                         <outlet property="emojiLabel" destination="yTW-yt-gMD" id="56e-Ry-cys"/>
                     </connections>
